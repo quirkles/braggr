@@ -1,27 +1,34 @@
-export const ridiculousActions = [
-	'made love to',
-	'fought',
-	'licked every inch of',
-	'performed ally theatre for'
+const template = 'I $actioned a $noun $inPlace while $scenario'
+
+const actioned = [
+    'made love to',
+    'fought',
+    'licked every inch of',
+    'performed ally theatre for'
 ]
 
-export const ridiculousNouns = [
+const noun = [
 	'beautiful woman',
 	'fearsome dragon',
 	'reanimated corpse',
 	'group of obsequious fuckwits'
 ]
 
-export const ridiculousPlace = [
+const inPlace = [
 	'amongst the dust of shattered empires',
 	'in a filthy arby\'s bathroom',
 	'in a trump tower penthouse',
 	'on the internet'
 ]
 
-export const ridiculousExaggeration = [
+const scenario = [
 	'men who wished me dead cowered in fear',
 	'onlookers cheered my every action',
 	'nuclear bombs exploded all around',
 	'morons applauded my noble efforts'
 ]
+
+export default {
+    template,
+	lists: { actioned, noun, inPlace, scenario }
+}

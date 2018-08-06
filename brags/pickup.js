@@ -1,4 +1,6 @@
-export const pickupVerbeds = [
+const template = 'I $verbed $adverbly $forDuration to seduce a $adjective $female'
+
+const verbed = [
 	'flirted',
 	'farted',
 	'sharted',
@@ -10,7 +12,7 @@ export const pickupVerbeds = [
 	'twerked'
 ]
 
-export const pickupAdverbs = [
+const adverbly = [
 	'incessantly',
 	'arrogantly',
 	'adamantly',
@@ -23,7 +25,7 @@ export const pickupAdverbs = [
 	'pitiably'
 ]
 
-export const pickupDurations = [
+const forDuration = [
 	'for seven days and seven nights',
 	'until I lost my vision',
 	'until I lost feeling in my arms and legs',
@@ -33,7 +35,7 @@ export const pickupDurations = [
 	'for a hot minute'
 ]
 
-export const pickupAdjectives = [
+const adjective = [
 	'busty',
 	'curmudgeonly',
 	'putrid',
@@ -45,7 +47,7 @@ export const pickupAdjectives = [
 	'real cunt of a'
 ]
 
-export const pickupSynonyms = [
+const female = [
 	'waitress',
 	'damsel',
 	'dame',
@@ -56,3 +58,8 @@ export const pickupSynonyms = [
 	'princess',
 	'honey'
 ]
+
+export default {
+	template,
+	lists: { verbed, adverbly, forDuration, adjective, female }
+}

@@ -1,4 +1,6 @@
-export const authorityFigureActions = [
+const template = 'I once $actioned a $kindOfPerson and got away with it because $reason'
+
+const actioned = [
 	'hospitalized',
 	'murked',
 	'ethered',
@@ -10,7 +12,7 @@ export const authorityFigureActions = [
 	'threw my own excrement at'
 ]
 
-export const authorityFigures = [
+const kindOfPerson = [
 	'police officer',
 	'postman',
 	'mayor',
@@ -23,7 +25,7 @@ export const authorityFigures = [
 	'mob boss'
 ]
 
-export const authorityFigureMitigatingCircumstances = [
+const reason = [
 	'I razed their cities to dust',
 	'I am the night',
 	'I\'m elon musk',
@@ -35,3 +37,8 @@ export const authorityFigureMitigatingCircumstances = [
 	'they were blinded by my taint',
 	'my anus is pristine'
 ]
+
+export default {
+	template,
+	lists: { actioned, kindOfPerson, reason }
+}

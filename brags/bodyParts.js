@@ -1,4 +1,6 @@
-export const bodyPartLys = [
+const template = 'I have $qualifier $adjective $bodyPart due to $reason'
+
+const qualifier = [
  'an unusually',
  'a relentlessly',
  'a savagely',
@@ -9,7 +11,7 @@ export const bodyPartLys = [
  'an incompehensibly'
 ]
 
-export const bodyPartAdjectives = [
+const adjective = [
 	'dense',
 	'turgid',
 	'flaccid',
@@ -23,7 +25,7 @@ export const bodyPartAdjectives = [
 	'flexible'
 ]
 
-export const bodyParts = [
+const bodyPart = [
 	'set of wisdom teeth',
 	'set of tonsils',
 	'member',
@@ -37,7 +39,7 @@ export const bodyParts = [
 	'webbing between my fingers'
 ]
 
-export const bodyPartAbsurdCircumstances = [
+const reason = [
 	'my paleolithic bone structure',
 	'my gene-splicing with a coyote',
 	'my ritual bathing in virgin blood',
@@ -46,3 +48,8 @@ export const bodyPartAbsurdCircumstances = [
 	'my wild and reckless youth',
 	'a botched operation'
 ]
+
+export default {
+    template,
+	lists: { qualifier, adjective, bodyPart, reason }
+}
