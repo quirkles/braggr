@@ -81,7 +81,7 @@ class App extends React.Component {
 						<div className="button" onClick={this.generateBrag} >Generate new brag</div>
 					</div>
 					<div>
-						<div className="button" onClick={() => copyBrag(brag)} >Copy to cipboard</div>
+						<div className="button" onClick={() => copyBrag(brag)} >Copy to clipboard</div>
 					</div>
 				</div>
 			</div>
