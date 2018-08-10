@@ -7,16 +7,18 @@ html {
 
 @media (max-width: 600px) {
     body {
-        width: 100vw;
+		width: 100vw;
+		height: 100vh;
 	}
 	h1 {
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 }
 
 @media (min-width: 600px) {
 	body {
 		width: 75vw;
+		height: 75vh;
 	}
 	h1 {
 		font-size: 3em;
@@ -24,7 +26,6 @@ html {
 }
 
 body {
-	height: 75vh;
 	margin: auto;
 	font-family: 'Montserrat', cursive;
 	color: #E9FF70;
@@ -38,9 +39,6 @@ body {
 .App {
 	width: 75%;
 	margin: auto
-}
-
-.brag-container {
 }
 
 .button {

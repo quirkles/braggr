@@ -37,7 +37,7 @@ const scenario = [
 	'nuclear bombs exploded all around',
 	'morons applauded my noble efforts',
 	'the queen of england wept tears of joy',
-	'the ghost of gnghis khan howled curses into the dying night'
+	'the ghost of genghis khan howled curses into the dying night'
 ]
 
 module.exports = {
