@@ -28,7 +28,7 @@ const scenario = [
 	'morons applauded my noble efforts'
 ]
 
-export default {
+module.exports = {
     template,
 	lists: { actioned, noun, inPlace, scenario }
 }

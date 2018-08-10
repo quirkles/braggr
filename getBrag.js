@@ -1,11 +1,8 @@
-import { authority, bodyParts, pickup, ridiculous }  from './brags'
+const brags = require('./brags')
 
-const bragTypes = [
-	authority,
-	bodyParts,
-	pickup,
-	ridiculous
-]
+const bragTypes = Object.values(brags)
+
+console.log(bragTypes)
 
 const getRandomElement = list => list[Math.floor(Math.random()*list.length)]
 
@@ -21,4 +18,4 @@ const getBrag = () => {
 		).join(' ').concat('.')
 }
 
-export default getBrag
+module.exports = getBrag

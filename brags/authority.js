@@ -38,7 +38,7 @@ const reason = [
 	'my anus is pristine'
 ]
 
-export default {
+module.exports = {
 	template,
 	lists: { actioned, kindOfPerson, reason }
 }

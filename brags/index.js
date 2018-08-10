@@ -1,4 +1,5 @@
-export { default as authority } from './authority'
-export { default as bodyParts } from './bodyParts'
-export { default as pickup } from './pickup'
-export { default as ridiculous } from './ridiculous'
+module.exports.authority = require('./authority')
+module.exports.bodyParts = require('./bodyParts')
+module.exports.pickup = require('./pickup')
+module.exports.ridiculous = require('./ridiculous')
+module.exports.nthBase = require('./nthBase')

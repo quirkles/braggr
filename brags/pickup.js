@@ -59,7 +59,7 @@ const female = [
 	'honey'
 ]
 
-export default {
+module.exports = {
 	template,
 	lists: { verbed, adverbly, forDuration, adjective, female }
 }

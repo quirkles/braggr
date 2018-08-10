@@ -49,7 +49,7 @@ const reason = [
 	'a botched operation'
 ]
 
-export default {
+module.exports = {
     template,
 	lists: { qualifier, adjective, bodyPart, reason }
 }

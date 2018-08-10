@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Kirang Haerang', cursive;
+  font-family: 'Montserrat', cursive;
   color: #011936;
   background-color: #F4FFFD;
 }
@@ -12,11 +12,16 @@ body {
 
 .button {
 	display: inline-block;
-	padding: 7px 12px;
+	padding: 12px 16px;
 	background-color: #F9DC5C;
 	cursor: pointer;
+	font-weight: 600;
 }
 
 .button:hover {
 	background-color: #ED254E;
+}
+
+h1 {
+	font-size: 3em;
 }
