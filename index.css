@@ -7,7 +7,6 @@ html {
 
 /* Base/Mobile styles */
 body {
-	background: url("./assets/space.gif");
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -16,17 +15,57 @@ body {
 #root {
 	width: 100%;
 	height: 100%;
-	display: flex;
 }
 
 .App {
-	margin: auto 2em;
+	height: 100%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
 
-.App > div {
+.bg-unicorn {
+	background: url("./assets/unicorn.gif");
+}
+
+.bg-unicorn .bg-selectors{
+	 color: #FF9770;
+}
+
+.bg-smiley {
+	background: url("./assets/smiley.gif");
+}
+
+.bg-smiley .bg-selectors{
+	color: #000;
+}
+
+.bg-space {
+	background: url("./assets/space.gif");
+}
+
+.app-container {
+	margin: auto 2em;
+}
+
+.app-container > div {
 	margin-bottom: 1em;
+}
+
+.bg-selectors {
+	font-family: 'Patua One', cursive;
+	display: flex;
+}
+
+.bg-selectors > div {
+	flex-grow: 1;
+	cursor: pointer;
+	font-weight: 500;
+	font-size: 1.5em;
+}
+
+.bg-selectors > div.selected {
+	text-decoration: underline;
 }
 
 h1 {
@@ -51,15 +90,19 @@ h1 {
 
 /* Desktop styles */
 @media (min-width: 600px) {
-	.App {
-		margin: auto;
-		width: 70%;
-	}
 	h1 {
 		font-size: 3em;
 	}
 	.button:hover {
 		background-color: #5CB0D1;
+	}
+	.bg-selectors > div {
+		font-weight: 900;
+		font-size: 3em;
+	}
+	.app-container {
+		width: 60%;
+		margin: auto;
 	}
 }
 
