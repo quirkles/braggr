@@ -1,25 +1,37 @@
+html {
+	/* background-image: url('./assets/ep_naturalblack.png') */
+	background-color: #FF9770;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', cursive;
-  color: #011936;
-  background-color: #F4FFFD;
+  color: #E9FF70;
+
 }
 
 .App {
 	margin: 100px;
 }
 
+.brag-container {
+	background-color: #FF70A6;
+	padding: 2em	
+}
+
 .button {
 	display: inline-block;
 	padding: 12px 16px;
-	background-color: #F9DC5C;
+	margin-right: 2em;
+	background-color: #70D6FF;
 	cursor: pointer;
 	font-weight: 600;
+	font-size: 1.5em;
 }
 
 .button:hover {
-	background-color: #ED254E;
+	background-color: #5CB0D1;
 }
 
 h1 {

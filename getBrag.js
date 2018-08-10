@@ -2,8 +2,6 @@ const brags = require('./brags')
 
 const bragTypes = Object.values(brags)
 
-console.log(bragTypes)
-
 const getRandomElement = list => list[Math.floor(Math.random()*list.length)]
 
 

@@ -3,24 +3,58 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import getBrag from './getBrag'
 
+const copyBrag = brag => {
+	const el = document.createElement('textarea');
+  	el.value = brag;
+  	el.setAttribute('readonly', '');
+  	el.style.position = 'absolute';
+  	el.style.left = '-9999px';
+  	document.body.appendChild(el);
+  	el.select();
+  	document.execCommand('copy');
+  	document.body.removeChild(el);
+}
+
 
 class App extends React.Component {
 	constructor(props) {
     	super(props)
-    	this.state = { brag: 'Click the button to see a brag' };
+    	this.state = {
+			brag: getBrag(),
+			canCopy: true
+		};
     	this.generateBrag = this.generateBrag.bind(this);
   	}
 
   	generateBrag() {
-		this.setState({ brag: getBrag() })
+		this.setState({
+			brag: getBrag(),
+			canCopy: true
+		})
 	}
 
 	render() {
-		const { brag } = this.state
+		const { brag, canCopy } = this.state
 		return (
 			<div className="App">
-				<div className="button" onClick={this.generateBrag} >Generate brag</div>
-				<h1 className="App-Title">{ brag }</h1>
+				<input
+					type="text"
+					value={brag}
+					id="bragTextField"
+					style={{display: 'none'}}
+					onChange={() => {}}
+				/>
+				<div className="brag-container">
+					<h1>
+						{ brag }
+					</h1>
+					<div className="button" onClick={this.generateBrag} >Generate new brag</div>
+					{
+						canCopy ?
+							<div className="button" onClick={() => copyBrag(brag)} >Copy to cipboard</div> :
+							null
+					}
+				</div>
 			</div>
 		)
 	}
