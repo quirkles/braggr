@@ -44,17 +44,15 @@ class App extends React.Component {
 					style={{display: 'none'}}
 					onChange={() => {}}
 				/>
-				<div className="brag-container">
-					<h1>
-						{ brag }
-					</h1>
-					<div className="button" onClick={this.generateBrag} >Generate new brag</div>
-					{
-						canCopy ?
-							<div className="button" onClick={() => copyBrag(brag)} >Copy to cipboard</div> :
-							null
-					}
-				</div>
+				<h1>
+					{ brag }
+				</h1>
+				<div className="button" onClick={this.generateBrag} >Generate new brag</div>
+				{
+					canCopy ?
+						<div className="button" onClick={() => copyBrag(brag)} >Copy to cipboard</div> :
+						null
+				}
 			</div>
 		)
 	}
